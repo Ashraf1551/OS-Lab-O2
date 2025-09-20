@@ -1,1 +1,1 @@
-# OS-Lab-O2
+# Lab01: Linux Basic Command

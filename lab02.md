@@ -35,7 +35,7 @@ echo "Hello World"
   It tells the operating system which interpreter to use to run the commands in the file.  
   In this case, we’re telling it to use the **Bash shell**.
 
-💡 **Pro Tip:**  
+💡 **Not Necessary:**  
 If you run this command in your terminal:
 
 ```bash
@@ -67,7 +67,20 @@ This is a security feature in Linux — by default, new files don’t have permi
 
 ---
 
-## 4. Making the File Executable with chmod
+## 4. What is `ls -all`?
+
+**To see details about files**
+
+```bash
+ls -al
+```
+
+This is a very common command to **see details about files** —  
+it lists all files (including hidden ones) with detailed information like permissions, owner, size, and modification date.
+
+---
+
+## 5. Making the File Executable with chmod
 
 We need to give our script **execute** permission.  
 We do this with the `chmod` (**change mode**) command.
@@ -84,7 +97,7 @@ chmod +x hello.sh
 
 ---
 
-## 5. Running it Successfully! 🎉
+## 6. Running it Successfully! 🎉
 
 Now that the script has the correct permissions, try running it again:
 
@@ -100,7 +113,7 @@ Hello World
 
 ---
 
-## 6. Taking Input from the User with read
+## 7. Taking Input from the User with read
 
 Scripts can also be interactive.  
 The `read` command pauses the script and waits for the user to type something and press **Enter**.
@@ -127,25 +140,6 @@ echo "Hello, $user_name"
 ```
 
 prints “Hello,” followed by whatever the user typed.
-
----
-
-## 7. Bonus Command: What is `ls -all`?
-
-Your teacher probably used:
-
-```bash
-ls -al
-```
-
-or
-
-```bash
-ls -l -a
-```
-
-This is a very common command to **see details about files** —  
-it lists all files (including hidden ones) with detailed information like permissions, owner, size, and modification date.
 
 ---
 
